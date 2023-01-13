@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form { 
+margin: 0 auto; 
+width:250px;
+font-size: large;
+color: rgb(40, 12, 116);
+}
+input[type=text] {
+  border: 2px solid rgb(64, 6, 109);
+  border-radius: 7px;
+}
+.button1:hover {
+  background-color: #146a95;
+  color: white;
+}
+
+.button2:hover{
+    background-color: #146a95;
+  color: white;
+}
+  hr.new1 {
+  border: 1px solid rgb(31, 8, 83);
+
+}
+
+
+
+</style>
+<body style=" background: linear-gradient(90deg, rgba(234,233,255,1) 0%, rgba(252,167,213,1) 35%, rgba(194,245,255,1) 100%);">
+    <h1 style="font-family:Roboto-Slab;text-align:center;font-size:200%;
+;padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 80px;color:white;background: linear-gradient(90deg, rgb(7, 7, 86) 0%, rgb(92, 7, 52) 35%, rgb(21, 127, 149) 100%);">Expense App</h1>
+
+  <p>
+    <form>
+  
+  
+  <label for="start">Date:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2023-01-13"
+       min="2023-01-01" max="2023-12-31"><br><br>
+
+       <legend>Account:</legend>
+
+   <input type="radio"  name="drone" value="cash"
+             checked>
+      <label for="cash">Cash</label>
+    </div>
+
+    <div>
+      <input type="radio" name="drone" value="accounts">
+      <label for="accounts">Accounts</label>
+    </div>
+
+    <div>
+      <input type="radio"  name="drone" value="card">
+      <label for="card">Card</label>
+      </div><br>
+
+      <label for="ammount">Ammount:</label>
+
+      <input type="number"  name="ammount"><br><br>
+      <label for="note">Note:</label>
+
+
+      <input type="text"  name="note"><br><br>
+      <input type="button" value="Add Expense" onclick="msg()" class="button button1">
+       <input type="button" value="Delete Expense" onclick="msg()" class="button button2">
+       <hr class="new1">
+      
+</form>
+
+  </p>
+</body>
+</html>
